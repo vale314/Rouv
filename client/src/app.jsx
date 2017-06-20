@@ -8,12 +8,14 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 //no importa una injection tap envento para el doble click en telefonos moviles aprte que la
 // herramienta onClick de js no es muy rapida esto nos ayuda con mas rapidez
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
 //importamos el tema de material-ui styles get mui theme
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider.js';
 //importamos el tema si no se ve nada
 import {BrowserRouter as Router } from 'react-router-dom'
 import routes from './routes.js'
 //importamos routes para los enlaces
+
 
 injectTapEventPlugin();
 //injectamos el evento para que funcione mas rapido el onClick

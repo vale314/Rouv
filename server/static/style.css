@@ -1,0 +1,26 @@
+#header{
+  padding-top:10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+}
+
+
+.Field{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+
+#Field{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.Button{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 15px;
+}

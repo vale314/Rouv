@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route, Miss} from 'react-router-dom'
-import Home from './componets/HomePage.jsx'
-import Sadas from './componets/Sadas.jsx'
+import Home from './containers/home/HomePageConta.jsx'
+import SignUp from './containers/signUp/SignUp.jsx'
 const Main = () => (
 
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/sadas/1' component={Sadas}/>
+      <Route path='/signup' component={SignUp}/>
     </Switch>
 
 )
