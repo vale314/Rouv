@@ -1,12 +1,11 @@
 import React from 'react';
-import SignUpCompo from '../../componets/signUp/SignUp.jsx'
+import LoginCompo from '../../componets/login/Login.jsx'
 
-class SignUp extends React.Component {
+class Login extends React.Component {
   constructor(props){
     super(props)
     this.state={
       user:{
-          name:'',
           email:'',
           password:''
         }
@@ -30,9 +29,8 @@ class SignUp extends React.Component {
 
   }
 
-
   render() {
-    return (<SignUpCompo
+    return (<LoginCompo
               home={this.home}
               user={this.state.user}
               onChange={this.onChange}
@@ -41,4 +39,4 @@ class SignUp extends React.Component {
 
 }
 
-export default SignUp;
+export default Login;

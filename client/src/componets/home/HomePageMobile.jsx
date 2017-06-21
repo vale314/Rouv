@@ -3,11 +3,11 @@ import { Button, Menu, Header } from 'semantic-ui-react'
 import { Image, Modal,Icon } from 'semantic-ui-react'
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import ModalPageLogin from './componets/Modal.jsx'
+
 const HomePage = ({
   SignUp,
+  Login
 }) => (
-
   <Menu>
     <Header
       id="header"
@@ -16,8 +16,8 @@ const HomePage = ({
       floated='right'
     />
 
-    <Menu.Item position='right'>
-        <ModalPageLogin/>
+    <Menu.Item position='right' onClick={Login}>
+      <Button primary>Login</Button>
     </Menu.Item>
 
     <Menu.Item onClick={SignUp}>

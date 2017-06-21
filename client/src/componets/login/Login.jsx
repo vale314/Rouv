@@ -1,8 +1,8 @@
 import React from 'react';
-import { Header, Segment,Button, Checkbox } from 'semantic-ui-react'
+import { Header, Segment,Button, Checkbox, Modal, Image, Icon} from 'semantic-ui-react'
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import * as semantic from "semantic-ui-react";
+
 
 
 
@@ -14,22 +14,13 @@ const CardExampleExpandable = ({home, user, onChange}) => (
         </Header>
       </Segment>
       <div className='Field' style={{marginTop:'15px'}}>
-        <semantic.Button color='facebook' >
-          <semantic.Icon name='facebook' /> Login with Facebook
-        </semantic.Button>
+        <Button color='facebook' >
+          <Icon name='facebook' /> Login with Facebook
+        </Button>
       </div>
       <form action="/" >
-      <div className='Field'>
-        <TextField
-                  floatingLabelText="Nombre"
-                  name="name"
-                  hintText="Name"
-                  id='Field'
-                  onChange={onChange}
-                  value={user.name}
-                />
-      </div>
-      <div className='Field'>
+
+      <div className='Field' >
         <TextField
                   floatingLabelText="Email"
                   name="email"
@@ -37,10 +28,12 @@ const CardExampleExpandable = ({home, user, onChange}) => (
                   id='Field'
                   onChange={onChange}
                   value={user.email}
+                
+
                 />
       </div>
 
-      <div className='Field'>
+      <div className='Field' >
       <TextField
                 floatingLabelText="Password"
                 name="password"
@@ -48,13 +41,14 @@ const CardExampleExpandable = ({home, user, onChange}) => (
                 type='password'
                 onChange={onChange}
                 value={user.password}
+
               />
       </div>
 
     </form>
 
     <div className='Button' >
-      <RaisedButton type="submit" label="Sign up" buttonStyle={{borderRadius: '15px'}} className="buttonHome" primary />
+      <RaisedButton type="submit" label="Login" buttonStyle={{borderRadius: '15px'}} className="buttonHome" primary />
     </div>
   </div>
 );
