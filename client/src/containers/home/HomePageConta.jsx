@@ -20,7 +20,7 @@ class HomePage extends React.Component {
   }
 
   componentWillMount(){
-    document.body.id='background'
+    document.body.className='background'
     if(window.innerWidth <= 500){
       this.setState({
         mobile:true

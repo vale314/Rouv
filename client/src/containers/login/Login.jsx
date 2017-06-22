@@ -29,6 +29,10 @@ class Login extends React.Component {
 
   }
 
+  componentWillMount(){
+    document.body.className=''
+  }
+
   render() {
     return (<LoginCompo
               home={this.home}

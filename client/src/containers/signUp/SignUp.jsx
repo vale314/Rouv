@@ -30,6 +30,10 @@ class SignUp extends React.Component {
 
   }
 
+  componentWillMount(){
+    document.body.className=''
+  }
+
 
   render() {
     return (<SignUpCompo

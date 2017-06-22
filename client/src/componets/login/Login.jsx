@@ -28,7 +28,7 @@ const CardExampleExpandable = ({home, user, onChange}) => (
                   id='Field'
                   onChange={onChange}
                   value={user.email}
-                
+
 
                 />
       </div>
