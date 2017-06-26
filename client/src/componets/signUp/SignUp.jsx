@@ -4,6 +4,7 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import * as semantic from "semantic-ui-react";
 
+import Recaptcha  from 'react-recaptcha';
 
 
 const CardExampleExpandable = ({home, user, onChange}) => (
@@ -48,9 +49,16 @@ const CardExampleExpandable = ({home, user, onChange}) => (
                 type='password'
                 onChange={onChange}
                 value={user.password}
+
               />
       </div>
-
+      {/*}<div className='Field'>
+      <Recaptcha
+          sitekey="6Lf6lCYUAAAAAHCXGNBJk3vv62a2dlTTmfIJtd7C"
+          render="explicit"
+          />
+      </div>
+    */}
     </form>
 
     <div className='Button' >

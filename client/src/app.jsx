@@ -13,19 +13,28 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider.js';
 //importamos el tema si no se ve nada
 import {BrowserRouter as Router } from 'react-router-dom'
+
+import { Provider } from "react-redux"
+
 import routes from './routes.js'
 //importamos routes para los enlaces
 
+import store from "./redux/store.js"
 
 injectTapEventPlugin();
 //injectamos el evento para que funcione mas rapido el onClick
 ReactDom.render((
   //renderizamos con el
-  <MuiThemeProvider muiTheme={getMuiTheme()}>
-    <Router>
-      {routes()}
-    </Router>
-  </MuiThemeProvider>), document.getElementById('react-app'));
+
+  <Provider store={store}>
+
+    <MuiThemeProvider muiTheme={getMuiTheme()}>
+      <Router>
+        {routes()}
+      </Router>
+    </MuiThemeProvider>
+  </Provider>
+), document.getElementById('react-app'));
   //esto lo mandas en el documento donde este ekl html5 y busca react-app y pones esto;
   // dentro de esta etiqueta que es la del temas y su atributo es igual al otro tema
   // tenemos una etiqueta rouet hystoty y esto es igual a browerHistory esto no importa router parq que halla

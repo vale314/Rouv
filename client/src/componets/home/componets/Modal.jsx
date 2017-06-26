@@ -5,6 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 
 
+
 const HomePage = () => {
 
   return(
@@ -39,11 +40,9 @@ const HomePage = () => {
                     />
             </div>
 
+
           </form>
           <div className='Button' >
-
-
-
             <RaisedButton type="submit" label="Login" buttonStyle={{borderRadius: '15px'}} className="buttonHome" primary />
           </div>
             </Modal.Description>

@@ -7,8 +7,12 @@ import ModalPageLogin from './componets/Modal.jsx'
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 
+
 const HomePage = ({
   SignUp,
+  Ask,
+  Write,
+  errorLength,
 }) => (
   <div>
     <Menu>
@@ -31,16 +35,20 @@ const HomePage = ({
 
     <div className='FieldHome'>
       <TextField
-                floatingLabelText="Email"
-                name="email"
-                hintText="Email"
+                floatingLabelText="Your Question Is?"
+                name="Ask"
                 id='Field'
-                multiLine={true}
-                style={{width:'35%'}}
-                inputStyle={{color:'red',backgroundColor:'white '}}
+                floatingLabelStyle={{fontFamily:'Arial',paddingLeft:'45%',color:'black'}}
+                style={{fontFamily:'Arial',width:'95%'}}
+                errorText={errorLength}
+                value={Ask}
+                onChange={Write}
               />
-    </div>
 
+    </div>
+    <div className='Button' >
+      <RaisedButton type="submit" label="Login" buttonStyle={{borderRadius: '15px'}} primary />
+    </div>
   </div>
 );
 
